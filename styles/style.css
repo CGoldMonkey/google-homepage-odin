@@ -1,0 +1,27 @@
+main {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+}
+
+nav {
+    display: grid;
+    grid-template: repeat(2, 15px) / 50% 50%;
+    border: 1px solid blue;
+}
+
+#navLeft {
+
+}
+
+#navRight {
+    justify-self: end;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    <l
+}
