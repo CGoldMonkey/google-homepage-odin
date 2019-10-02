@@ -20,6 +20,7 @@ main {
 
 }
 
+
 main div {
     text-align: center;
     border: 1px solid black;
@@ -51,6 +52,18 @@ input[type=submit] {
 input[type=submit]:hover {
     border: 1px solid black;
 }
+
+#signIn a {
+    background-color: rgb(37, 131, 175);
+    border: 1px solid orange;
+    padding: 5px 13px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
 
 nav, footer {
     display: grid;
