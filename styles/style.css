@@ -1,20 +1,9 @@
-/* Gonna give flexbox a try here
-main {
-    text-align: center;
-    border: 1px solid red;
-}
-
-main div {
-    display: inline-block;
-    border: 1px solid black;
-}
-*/
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
 }
 
+/*Set flex, center div and place at botom of container*/
 main {
     display: flex;
     justify-content: center;
@@ -22,41 +11,29 @@ main {
     height: 375px;
 }
 
-
+/*Center image and submit buttons */
 main div {
     text-align: center;
 }
 
+/*For the text bar/search bar*/
 input[type=text] {
     width: 440px;
-   /* box-sizing: border-box;
-/*    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 10px 40px; */
     margin: 25px 0 30px 0;
     border-radius: 25px;
     padding: 10px 10px 10px 30px;
-
     font-size: 14px;
     border: 1px solid rgb(196, 196, 174);
- /*   background-image: url("./images/magnifyGlass.png"); 
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-
-    background-color: white;
-
-  /*
-  padding-top: 10px;
-  padding-bottom: 10px;
-      margin-bottom: 30px;*/
 }
 
+/*For the magnifying glass in the serch bar*/
 span {
     position: relative;
     right: 478px;
     top: 5px
 }
 
+/*For the submit buttons*/
 input[type=submit] {
     margin: 0 5px;
     height: 30px;
@@ -65,13 +42,13 @@ input[type=submit] {
     padding: 0 15px;
     border: none;
     font-size: 14px;
-
 }
 
 input[type=submit]:hover {
     border: 1px solid black;
 }
 
+/*Sign In link in the header*/
 #signIn a {
     background-color: rgb(46, 143, 223);
     padding: 5px 13px;
@@ -80,22 +57,21 @@ input[type=submit]:hover {
     font-weight: 700;
 }
 
-
-
+/*Had the Header and footer positioned with grid.  1 row / 2 cols*/
 nav, footer {
     display: grid;
     grid-template: 40px / 50% 50%;
     align-items: center;
 }
 
+/*Place them at the far right of the page*/
 #navRight, #footRight {
     justify-self: end;
 }
 
+/*Make the links not underlined, black, and smaller*/
 a {
     text-decoration: none;
- /*  font-size: 80%; 
-    color: gray; */
     color: black;
     font-size: 80%;
 }
@@ -104,39 +80,36 @@ a:hover {
     text-decoration: underline;
 }
 
+/*Used to make the horizontal nav bar in header and footer.  Get rid of bullet points*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
+/*Part of the nav bar in header and footer.
+Get rid of block and make inline to get them in one line*  Gets list on one line.*/
 li {
     display: inline;
     margin-left: 20px;
 }
 
+/*Spacing for the right side of the header and footer*/
 #navRight ul li, #footRight ul li {
     margin-right: 20px;
     margin-left: 0;
 }
 
+/*Gets footer to bottom of the page and a different color.*/
 footer {
     background-color: rgb(240, 239, 239);
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-
 }
 
+/*Footer text a gray color*/
 footer div ul li a {
     color: rgb(87, 87, 87);
 }
-/*
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-*/
